@@ -26,7 +26,7 @@ export default {
     // },
   },
   setup() {
-    useMeta({ title: "My head is small" });
+    useMeta({ title: "Page one", description: "This page is a demo" });
   },
 };
 </script>

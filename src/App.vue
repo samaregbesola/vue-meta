@@ -1,7 +1,12 @@
 <template>
   <metainfo>
     <template v-slot:title="{ content }">{{
-      content ? `${content} | SITE_NAME` : `SITE_NAME`
+      content ? `${content} | A test app` : `A test application`
+    }}</template>
+    <template v-slot:description="{ content }">{{
+      content
+        ? `${content}`
+        : `We have the best kind of website the internet has to offer`
     }}</template>
   </metainfo>
   <div id="app">
