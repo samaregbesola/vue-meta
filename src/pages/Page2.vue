@@ -17,8 +17,16 @@
 import useCounter from "../compositions/useCounter";
 import VueImage from "../components/VueImage.vue";
 import godcode from "../assets/godcode.jpg";
-
+import { useHead } from "unhead";
 const { counter, incrementCounter } = useCounter();
+
+export default {
+  setup() {
+    useHead({
+      title: "Mo gbadun",
+    });
+  },
+};
 </script>
 
 <style lang="postcss" scoped>
