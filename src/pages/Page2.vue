@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import useCounter from "../compositions/useCounter";
 import VueImage from "../components/VueImage.vue";
 import godcode from "../assets/godcode.jpg";

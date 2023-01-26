@@ -1,14 +1,4 @@
 <template>
-  <metainfo>
-    <template v-slot:title="{ content }">{{
-      content ? `${content} | A test app` : `A test application`
-    }}</template>
-    <template v-slot:description="{ content }">{{
-      content
-        ? `${content}`
-        : `We have the best kind of website the internet has to offer`
-    }}</template>
-  </metainfo>
   <div id="app">
     <h2>This is a Vue 3 starter project</h2>
 
@@ -22,14 +12,28 @@
 </template>
 
 <script>
-import { useMeta } from "vue-meta";
+// import { useMeta } from "vue-meta";
+import { useHead } from "unhead";
 
 export default {
   name: "App",
   setup() {
-    useMeta({
-      title: "",
-      htmlAttrs: { lang: "en", amp: true },
+    useHead({
+      title: "My awesome site",
+      meta: [
+        {
+          name: "title",
+          content: "my awesome website",
+        },
+        {
+          name: "keywords",
+          content: "I'm all good",
+        },
+        {
+          name: "robots",
+          content: "ode ni e",
+        },
+      ],
     });
   },
 };

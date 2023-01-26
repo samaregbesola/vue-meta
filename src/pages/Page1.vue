@@ -12,7 +12,8 @@
 
 <script>
 import { mapState, mapMutations } from "vuex";
-import { useMeta } from "vue-meta";
+
+import { useHead } from "unhead";
 
 export default {
   name: "Page1",
@@ -21,12 +22,11 @@ export default {
   },
   computed: {
     ...mapState(["storeCounter"]),
-    // title() {
-    //   return `Page 1 - My App`;
-    // },
   },
   setup() {
-    useMeta({ title: "Page one", description: "This page is a demo" });
+    useHead({
+      title: "O gbadun",
+    });
   },
 };
 </script>

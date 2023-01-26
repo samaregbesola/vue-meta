@@ -11,12 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "@vitejs/plugin-vue": "4.0.0",
+    "add": "2.0.6",
     "postcss-nested": "6.0.0",
+    "unhead": "1.0.18",
     "vite": "4.0.1",
     "vue": "3.2.45",
-    "vue-meta": "3.0.0-alpha.10",
     "vue-router": "4.1.6",
-    "vuex": "4.1.0"
+    "vuex": "4.1.0",
+    "yarn": "1.22.19"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "3.2.45"
